@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div className="container-fluid">
+      <div className="container">
         <NavLink className="navbar-brand" to="/">
           Navbar
         </NavLink>
@@ -50,6 +50,16 @@ const Navbar = () => {
                 to="/products"
               >
                 Products
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/peliculas"
+              >
+                Peliculas
               </NavLink>
             </li>
           </ul>

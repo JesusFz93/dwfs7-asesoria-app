@@ -10,6 +10,7 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ProductsPage from "../pages/ProductsPage";
 import Navbar from "../components/Navbar";
+import PeliculasPage from "../pages/PeliculasPage";
 // import NotFound from "../pages/NotFound";
 
 const AppRouter = () => {
@@ -21,6 +22,7 @@ const AppRouter = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/peliculas" element={<PeliculasPage />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
